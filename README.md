@@ -4,3 +4,8 @@
 
 Compiled Hive Thrift API for
 [`hive_metastore`](https://github.com/apache/hive/blob/master/standalone-metastore/metastore-common/src/main/thrift/hive_metastore.thrift).
+      
+## Rebuilding thrift from sources
+```
+./bin/generate-sources.sh
+```
