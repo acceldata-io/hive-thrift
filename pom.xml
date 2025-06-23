@@ -19,6 +19,19 @@
 
     <inceptionYear>2023</inceptionYear>
 
+    <distributionManagement>
+        <repository>
+          <id>nexus-releases</id>
+          <name>Releases</name>
+         <url>https://repo1.acceldata.dev/repository/odp-staging-release/</url>
+       </repository>
+       <snapshotRepository>
+         <id>nexus-snapshots</id>
+         <name>Snapshot</name>
+         <url>https://repo1.acceldata.dev/repository/odp-staging-snapshot/</url>
+       </snapshotRepository>
+     </distributionManagement>    
+    
     <scm>
         <connection>scm:git:git://github.com/trinodb/hive-thrift.git</connection>
         <url>https://github.com/trinodb/hive-thrift</url>
