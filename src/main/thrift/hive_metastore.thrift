@@ -2671,6 +2671,10 @@ service ThriftHiveMetastore
   list<string> get_all_tables(1: string db_name) throws (1: MetaException o1)
 
   list<ExtendedTableInfo> get_tables_ext(1: GetTablesExtRequest req) throws (1: MetaException o1)
+  // Legacy Hive < 2.1 metastore call. Retained so the Trino thrift client can fall back to
+  // it against Hive 1.x metastores which do not implement get_table_req.
+  Table get_table(1:string dbname, 2:string tbl_name)
+                       throws (1:MetaException o1, 2:NoSuchObjectException o2)
   GetTableResult get_table_req(1:GetTableRequest req) throws (1:MetaException o1, 2:NoSuchObjectException o2)
   GetTablesResult get_table_objects_by_name_req(1:GetTablesRequest req)
 				   throws (1:MetaException o1, 2:InvalidOperationException o2, 3:UnknownDBException o3)
