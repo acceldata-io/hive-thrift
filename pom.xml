@@ -10,7 +10,7 @@
 
     <groupId>io.trino.hive</groupId>
     <artifactId>hive-thrift</artifactId>
-    <version>3.1.4.3.4.3.0-1</version>
+    <version>3.1.4.3.4.3.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>hive-thrift</name>
